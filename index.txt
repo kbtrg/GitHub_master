@@ -11,4 +11,8 @@
 ２行目：空白
 ３行目以降：理由
 
-# git statusで確認
+# git status
+現在のステージングの状況を確認できる
+
+# git diff
+git diff と git diff --staged
