@@ -3,3 +3,7 @@
 git commit --amend
 
 git hotfix
+
+conflict
+
+pull request
