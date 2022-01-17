@@ -1,6 +1,6 @@
 "GitHub_master" create
 
-git commit
+git commit --amend amend
 
 git hotfix
 
