@@ -1,4 +1,0 @@
-home
-git pull
-
-git stash reset
