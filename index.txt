@@ -1,11 +1,28 @@
-"GitHub_master" create
-
-git commit --amend amend
-
-git hotfix
-
-conflict
-
-pull request
-
-github flow
+/* gitの復習をしていくよ！ */
+git add . 
+git commit -m 
+git push -u -f(絶対しないように！)
+git diff --staged
+git status
+git log --oneline -n 3 
+git config --global alias.ci commit (commitのエイリアスをciに設定)
+.gitignore
+git checkout --<ファイル名> ステージの状態をワークツリーにコピー
+git reset HEAD <ファイル名> リポジトリの状態をステージにコピー
+git commit --amend  push後はNG！
+git remote -v URLも含めて
+git fetch リモートのブランチ情報を持ってくる
+git merge <本ブランチ> <対象ブランチ>
+git pull (feth + merge) 今いるブランチに指定したブランチをマージ
+git remote show <リモート名> リモート情報を詳細に確認
+git branch <作成ブランチ名> or git checkout -b <作成ブランチ名>
+git branch -d <削除ブランチ> -Dは強制削除（変更中のブランチを強制削除したいとき）
+git branch -m <新しいブランチ名>
+git rebase <本ブランチ>
+git config --global pull.rebase true (pullのデフォルト系をリベース型に)
+git rebase -i HEAD~3 (先頭から３個のコミットの内容を修正する)
+pick(通常), edit(編集), squash(まとめる)
+git rebase --continue (git rebase -iコマンドの続き)
+vimエディタ：u->undo, Ctrl+r->redo, yy->１行copy, dd->１行cut, p(P)->下(上)の行にペースト
+git tag -l(参照) -a(注釈付き) 
+git tag <タグ名> <コミット名(ハッシュ)> 後からタグ付け
